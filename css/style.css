@@ -1,0 +1,169 @@
+body {
+  background-color: #ddffdf; }
+
+.header {
+  background-color: #7df79f; }
+
+.mainNav {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: flex-end;
+  font-family: "Oswald", sans-serif; }
+  .mainNav__logo {
+    margin-right: auto;
+    height: 50px;
+    animation: logo 3s; }
+  .mainNav_active {
+    background-color: #005f15; }
+  .mainNav_nonActive {
+    background-color: rgba(255, 255, 255, 0.3); }
+  .mainNav__menuButton {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    display: none;
+    padding: 5px; }
+  .mainNav_link {
+    margin: 5px;
+    width: 20%;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2em;
+    border-radius: 15px;
+    box-shadow: 2px -2px 10px black; }
+    .mainNav_link:hover {
+      background-color: #007329; }
+
+.intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-image: url(../image/forests-personalization-walks.jpg);
+  background-attachment: fixed;
+  background-position-y: -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px; }
+  .intro__name {
+    font-size: 5em;
+    text-align: center;
+    flex: 1 1 300px;
+    font-weight: bold;
+    color: #43af73;
+    mix-blend-mode: difference;
+    text-shadow: 1px 1px 3px white;
+    font-family: "Oswald", sans-serif; }
+  .intro__description {
+    flex: 1 1 300px;
+    background-color: rgba(245, 255, 236, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    color: #000000;
+    font-family: "PT Serif", serif, large; }
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto; }
+  .content__head {
+    text-align: center;
+    font-size: 2em;
+    color: #1d9147;
+    font-family: "Oswald", sans-serif; }
+
+.boxes {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .boxes_threeColumn {
+    flex: 1 1 250px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    background-color: #7df79f;
+    display: flex;
+    flex-flow: column;
+    box-shadow: inset 2px 2px 5px black, inset -2px -2px 5px black;
+    text-align: justify;
+    font-family: "PT Serif", serif, large; }
+  .boxes__more {
+    margin-top: auto;
+    padding: 5px;
+    text-align: center; }
+  .boxes__button {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: #1d9147;
+    padding: 5px;
+    border-radius: 7px; }
+    .boxes__button:hover {
+      background-color: #005f15; }
+
+.footerSection {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #7df79f;
+  display: flex;
+  flex-flow: row wrap;
+  color: black;
+  padding: 10px;
+  font-family: "PT Serif", serif, large; }
+  .footerSection__copyright {
+    flex: 2 1 500px;
+    margin-left: 30px; }
+  .footerSection__signup {
+    flex: 1 1 250px;
+    margin-left: 30px; }
+  .footerSection__signup label {
+    width: 100%; }
+  .footerSection__signup input[type="email"] {
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+    border-width: 0;
+    font-size: 1.1em; }
+  .footerSection__signup input[type="submit"] {
+    border-radius: 0 4px 4px 0;
+    padding: 0 10px;
+    background-color: #1d9147;
+    color: white;
+    border-width: 0;
+    font-size: 1em; }
+  .footerSection__container {
+    display: flex;
+    flex-flow: row wrap; }
+
+@keyframes logo {
+  from {
+    transform: rotate(0) scale(0.5); }
+  50% {
+    transform: rotate(-720deg) scale(0.5); }
+  to {
+    transform: rotate(0) scale(1); } }
+@media screen and (max-width: 630px) {
+  .mainNav .mainNav_link {
+    display: none; }
+
+  .mainNav .mainNav__menuButton {
+    display: block; }
+
+  .mainNav.mainNav_mobile {
+    flex-flow: row wrap; }
+
+  .mainNav.mainNav_mobile .mainNav_link {
+    display: block;
+    width: 100%;
+    align-self: center; } }
+
+/*# sourceMappingURL=style.css.map */
